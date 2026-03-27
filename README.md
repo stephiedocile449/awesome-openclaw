@@ -167,6 +167,7 @@
 - [moltis-org/moltis](https://github.com/moltis-org/moltis) ![GitHub Repo stars](https://img.shields.io/github/stars/moltis-org/moltis?style=social) - Rust-native OpenClaw-style assistant runtime with sandboxing and voice support.
 - [memovai/mimiclaw](https://github.com/memovai/mimiclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/memovai/mimiclaw?style=social) - Hardware-oriented runtime for ultra-low-cost OpenClaw-style deployments.
 - [HKUDS/nanobot](https://github.com/HKUDS/nanobot) ![GitHub Repo stars](https://img.shields.io/github/stars/HKUDS/nanobot?style=social) - Ultra-lightweight OpenClaw-style alternative.
+- [sipeed/picoclaw](https://github.com/sipeed/picoclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/sipeed/picoclaw?style=social) - Tiny fast OpenClaw-style runtime designed for lightweight and highly deployable setups.
 - [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/qwibitai/nanoclaw?style=social) - Lightweight secure alternative with broad messaging integrations.
 - [poco-ai/poco-agent](https://github.com/poco-ai/poco-agent) ![GitHub Repo stars](https://img.shields.io/github/stars/poco-ai/poco-agent?style=social) - Web UI-first alternative to OpenClaw with sandboxed runtime.
 - [AidanPark/openclaw-android](https://github.com/AidanPark/openclaw-android) ![GitHub Repo stars](https://img.shields.io/github/stars/AidanPark/openclaw-android?style=social) - Run OpenClaw on Android with minimal setup.
