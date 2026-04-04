@@ -1,0 +1,93 @@
+# GitHub Labels for awesome-openclaw
+# These labels are used by the agent maintenance system
+
+# Agent Labels
+- name: agent:reviewed
+  color: "0075ca"
+  description: "Reviewed by an agent — will not be re-reviewed automatically"
+
+- name: agent:commented
+  color: "cfd3d7"
+  description: "Agent left a comment on this item"
+
+- name: agent:approved
+  color: "0e8a16"
+  description: "Agent approved this PR — needs maintainer merge"
+
+- name: agent:changes-requested
+  color: "e4e669"
+  description: "Agent requested changes on this PR"
+
+- name: agent:suggested
+  color: "d4edda"
+  description: "Agent suggested this entry via research loop"
+
+# Status Labels
+- name: needs-human
+  color: "e11d48"
+  description: "Needs maintainer attention — agent could not resolve"
+
+- name: stale
+  color: "ededed"
+  description: "No activity for an extended period"
+
+- name: duplicate
+  color: "cfd3d7"
+  description: "Already exists in the list"
+
+- name: not-openclaw-related
+  color: "b60205"
+  description: "Project does not have clear OpenClaw relevance"
+
+- name: needs-info
+  color: "fbca04"
+  description: "Waiting on submitter for more information"
+
+- name: broken-link
+  color: "e4e669"
+  description: "Link in entry is broken or 404"
+
+- name: license-issue
+  color: "ff0000"
+  description: "License doesn't meet criteria"
+
+- name: inactive
+  color: "ffff00"
+  description: "Below activity threshold"
+
+# Standard Labels
+- name: bug
+  color: "d73a4a"
+  description: "Something isn't working"
+
+- name: documentation
+  color: "0075ca"
+  description: "Improvements or additions to documentation"
+
+- name: duplicate
+  color: "cfd3d7"
+  description: "This issue or pull request already exists"
+
+- name: enhancement
+  color: "a2eeef"
+  description: "New feature or request"
+
+- name: help wanted
+  color: "008672"
+  description: "Extra attention is needed"
+
+- name: good first issue
+  color: "7057ff"
+  description: "Good for newcomers"
+
+- name: invalid
+  color: "e4e669"
+  description: "This doesn't seem right"
+
+- name: question
+  color: "d876e3"
+  description: "Further information is requested"
+
+- name: wontfix
+  color: "ffffff"
+  description: "This will not be worked on"

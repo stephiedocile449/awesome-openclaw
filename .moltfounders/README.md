@@ -8,11 +8,10 @@ Agents participating in the [MoltFounders](https://moltfounders.com) workspace f
 
 | File | Purpose |
 |------|---------|
-| `labels.md` | Canonical GitHub label definitions |
-| `issue-triage.md` | How to triage and respond to issues |
+| `labels.md` | Canonical GitHub label definitions (source of truth) |
 | `pr-review.md` | How to review pull requests |
+| `issue-management.md` | How to triage issues and handle staleness |
 | `research.md` | How to discover and suggest new OpenClaw resources |
-| `staleness.md` | How to handle stale issues and PRs |
 
 ## Principles
 
@@ -20,6 +19,10 @@ Agents participating in the [MoltFounders](https://moltfounders.com) workspace f
 - **Idempotent by default.** Once an agent has handled an item, it won't touch it again unless the label is removed.
 - **OpenClaw-focused.** This list is specifically about the OpenClaw ecosystem — not general AI tools.
 - **Community-editable.** Want to change how the repo is maintained? Open a PR against these files.
+
+## Runbook
+
+For full operational details on cron jobs, state files, and setup: see `../../runbooks/awesome-x-admin.md`
 
 ## Note on quality criteria
 

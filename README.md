@@ -76,6 +76,9 @@
 - [refly-ai/refly](https://github.com/refly-ai/refly) ![GitHub Repo stars](https://img.shields.io/github/stars/refly-ai/refly?style=social) - Open-source agent skills builder for creating reusable workflows and bots.
 - [unbrowse-ai/unbrowse](https://github.com/unbrowse-ai/unbrowse) ![GitHub Repo stars](https://img.shields.io/github/stars/unbrowse-ai/unbrowse?style=social) - API-native browser skill and CLI for agent workflows.
 - [libukai/awesome-agent-skills](https://github.com/libukai/awesome-agent-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/libukai/awesome-agent-skills?style=social) - Broader agent-skills guide with OpenClaw overlap.
+- [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/kepano/obsidian-skills?style=social) - Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and the CLI.
+- [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) ![GitHub Repo stars](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=social) - AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web.
+- [kesslerio/coding-agent-openclaw-skill](https://github.com/kesslerio/coding-agent-openclaw-skill) ![GitHub Repo stars](https://img.shields.io/github/stars/kesslerio/coding-agent-openclaw-skill?style=social) - Coding agent skill that orchestrates Codex, Claude Code, Gemini, Pi, and OpenCode CLIs.
 
 <p align="right"><a href="#contents">⬆️ Back to Top</a></p>
 
@@ -137,6 +140,8 @@
 - [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) ![GitHub Repo stars](https://img.shields.io/github/stars/supermemoryai/openclaw-supermemory?style=social) - Long-term memory extension for OpenClaw.
 - [mem9-ai/mem9](https://github.com/mem9-ai/mem9) ![GitHub Repo stars](https://img.shields.io/github/stars/mem9-ai/mem9?style=social) - Unlimited memory layer for long-horizon OpenClaw workflows.
 - [zilliztech/memsearch](https://github.com/zilliztech/memsearch) ![GitHub Repo stars](https://img.shields.io/github/stars/zilliztech/memsearch?style=social) - Markdown-first memory system inspired by OpenClaw.
+- [volcengine/OpenViking](https://github.com/volcengine/OpenViking) ![GitHub Repo stars](https://img.shields.io/github/stars/volcengine/OpenViking?style=social) - Open-source context database designed specifically for AI Agents through a file system paradigm.
+- [memorycrystal/memorycrystal](https://github.com/memorycrystal/memorycrystal) ![GitHub Repo stars](https://img.shields.io/github/stars/memorycrystal/memorycrystal?style=social) - Persistent cognitive memory layer with vector-indexed knowledge graph. Ships as OpenClaw plugin and MCP server.
 
 <p align="right"><a href="#contents">⬆️ Back to Top</a></p>
 
