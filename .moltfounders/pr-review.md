@@ -2,76 +2,112 @@
 
 ## When to Run
 
-On every agent loop cycle, scan all open PRs.
+On every PR review loop cycle, scan all open pull requests.
 
-## Skip Conditions
+## Trusted Agent Identity
 
-- PR already has `agent:reviewed` label → skip entirely
-- PR is a draft → skip
-- PR was opened by an agent → skip
-- Bot PR (dependabot, etc.) → label `needs-human`, skip
-- **PR has merge conflicts** (`mergeable = false`) → comment asking author to rebase, apply `needs-info` label, do NOT approve, skip remaining review steps entirely
+- Any PR authored by GitHub user `alvinreal` is an **agent PR**.
+- Any other PR is a **community PR**.
 
-## Review Steps
+## Processing Order
 
-### 1. Understand what the PR does
+1. Process all **agent PRs** first
+2. Then process **community PRs**
 
-Read the PR title, description, and diff carefully.
+## Global Rules
 
-### 2. Format checks
+- Skip all draft PRs
+- Reopened PRs are treated as fresh
+- Community PRs already labeled `agent:reviewed` are skipped until new activity arrives
+- Agent PRs are re-evaluated every run
 
-- Does the entry follow the format in CONTRIBUTING.md?
-  ```
-  - [owner/repo](url) ![GitHub stars badge] - Short factual description.
-  ```
-- Is the description short, neutral, and factual (no marketing language)?
-- Is it placed in the correct section?
-- Is the link valid? (Check URL resolves)
-- Stars badge uses `?style=social` format?
+## Agent PR Path
 
-### 3. Content checks
+### Auto-merge eligibility
 
-**OpenClaw relevance:**
-- Does it have a clear, direct connection to OpenClaw? (skill, plugin, integration, guide, tool for OpenClaw users)
-- If relevance is tenuous, ask the submitter to clarify in the PR
+An agent PR may be auto-merged only if all are true:
 
-**Activity / usefulness:**
-- Does the repo/resource exist and load?
-- Is it reasonably active or at minimum a useful stable resource?
-- Abandoned projects with no commits in 12+ months: request changes unless it's a reference/archival resource
+- authored by `alvinreal`
+- touches **`README.md` only**
+- stays within **one category only**
+- is **non-structural**
+- is within the current **mechanically safe lane**
+- passes all required checks
 
-**Duplicate check:**
-- Search the current README for the repo URL and name
-- If duplicate → comment clearly, apply `duplicate` label
+Structural changes include heading changes, section renames, order/layout changes, and formatting convention changes.
 
-**Category fit:**
-- Is it in the right section?
-- If it fits better elsewhere, suggest the correct section
+### Required checks before merge
 
-### 4. Leave your review
+Run all of these before merging an agent PR:
 
-Be specific and helpful:
-- List each issue with clear explanation
-- If approving: say exactly why it meets the bar
-- If requesting changes: give actionable feedback
+1. Verify the diff still touches `README.md` only
+2. Verify the diff still stays within one category and remains non-structural
+3. Verify links resolve
+4. Verify GitHub badge format remains correct where used
+5. Verify no unintended duplicate listing is created
+6. Verify official-resource claims directly when applicable
 
-### 5. Apply labels and set review status
+If any required check fails, merge is blocked.
 
-- Always apply `agent:reviewed`
-- Apply `agent:approved` if the PR meets all criteria
-- Apply `agent:changes-requested` if changes needed
-- Apply relevant labels (`duplicate`, `not-openclaw-related`, `broken-link`) as needed
-- Apply `needs-human` for borderline cases or disputes
+### Safe lane
 
-## Important: Agent approval ≠ merge
+The initial unattended safe lane is limited to:
 
-`agent:approved` means the PR passed automated review. **Only the maintainer merges.**
+- broken-link fixes or removals
+- deduplication
+- canonical-source replacement
+- obvious category corrections
+- official OpenClaw resource additions or updates
 
-## Edge Cases
+If an agent PR is valid but outside that safe lane, leave it open and apply `needs-human`.
 
-- **PR removes a broken link:** Fast-track approve — these are unambiguously good
-- **PR fixes formatting only:** Fast-track approve
-- **PR adds something useful but format is slightly off:** Request small formatting fix, approve the concept
-- **PR has been open >30 days with no author response:** Follow staleness rules in `staleness.md`
-- **Submitter disputes feedback:** Stand firm on objective criteria (relevance, format), label `needs-human` for subjective disputes
-- **PR adds a commercial tool with OpenClaw integration:** Fine if the integration is real and useful — commercial tools are allowed
+### Fixable issues
+
+One fix attempt is allowed for clearly fixable issues only:
+
+- wording cleanup
+- placement/category adjustment
+- badge/entry format fixes
+- duplicate cleanup
+- simple conflict resolution
+
+If still failing after one fix attempt, close the PR with a short specific reason.
+
+### Conflict handling
+
+- Community PR with conflicts: skip
+- Agent PR with conflicts: if otherwise eligible, attempt one safe resolution and re-check
+
+### Outcomes for agent PRs
+
+- **Eligible and valid:** merge silently
+- **Valid but outside auto-merge scope:** leave open and apply `needs-human`
+- **Mixed-scope PR** (safe + forbidden changes): close
+
+## Community PR Path
+
+### Review requirements
+
+Review community PRs against `CONTRIBUTING.md` and the current `README.md` state.
+
+Check:
+
+- OpenClaw relevance
+- link validity
+- description neutrality and clarity
+- category fit
+- duplicate status
+- whether the change improves the list without creating cross-category duplication
+
+### Outcomes for community PRs
+
+- **Valid:** leave a clear review comment and apply `agent:reviewed`, `agent:approved`, and `needs-human`
+- **Needs changes:** leave a clear review comment and apply `agent:changes-requested`
+- **Mechanically invalid or clearly out of scope:** close with a specific reason and apply `agent:rejected`
+
+Community PRs are never auto-merged.
+
+### Label maintenance
+
+- If a community PR gets new commits or other meaningful new activity, clear outdated agent review labels before re-reviewing it
+- Remove outdated failure or escalation labels automatically when the PR state becomes valid again

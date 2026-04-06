@@ -26,7 +26,6 @@
 ## 📋 Contents
 
 - [🏛️ Official Resources](#official-resources)
-- [📚 Curated Collections](#curated-collections)
 - [🧰 Skills & Registries](#skills-registries)
 - [🎛️ Dashboards & Control Centers](#dashboards-control-centers)
 - [🚀 Deployment & Operations](#deployment-operations)
@@ -35,7 +34,6 @@
 - [🔌 Plugins & Channel Integrations](#plugins-channel-integrations)
 - [⚡ Alternative Clients & Runtimes](#alternative-clients-runtimes)
 - [🎓 Learning Resources](#learning-resources)
-- [🌍 Community](#community)
 
 <a id="official-resources"></a>
 ## 🏛️ Official Resources
@@ -43,24 +41,9 @@
 - [openclaw/openclaw](https://github.com/openclaw/openclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/openclaw?style=social) - The core OpenClaw project.
 - [openclaw.ai](https://openclaw.ai) - Official website.
 - [docs.openclaw.ai](https://docs.openclaw.ai) - Official documentation.
-- [openclaw/clawhub](https://github.com/openclaw/clawhub) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/clawhub?style=social) - Official skill directory.
 - [openclaw/lobster](https://github.com/openclaw/lobster) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/lobster?style=social) - Official workflow shell for composing tools and resumable automations.
-- [openclaw/openclaw-ansible](https://github.com/openclaw/openclaw-ansible) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/openclaw-ansible?style=social) - Official hardened Ansible installer for Debian and Ubuntu deployments.
-- [openclaw/nix-openclaw](https://github.com/openclaw/nix-openclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/nix-openclaw?style=social) - Official Nix packaging for OpenClaw.
-- [openclaw/homebrew-tap](https://github.com/openclaw/homebrew-tap) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/homebrew-tap?style=social) - Official Homebrew tap.
 - [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/openclaw-windows-node?style=social) - Official Windows companion suite.
-- [openclaw/clawdinators](https://github.com/openclaw/clawdinators) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/clawdinators?style=social) - Official declarative infrastructure for always-on maintainer-style deployments.
 - [openclaw/acpx](https://github.com/openclaw/acpx) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/acpx?style=social) - Official headless CLI client for stateful ACP sessions.
-- [openclaw/skills](https://github.com/openclaw/skills) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/skills?style=social) - Official archive of skill versions published to ClawHub.
-
-<p align="right"><a href="#contents">⬆️ Back to Top</a></p>
-
-<a id="curated-collections"></a>
-## 📚 Curated Collections
-
-- [alvinunreal/awesome-openclaw-tips](https://github.com/alvinunreal/awesome-openclaw-tips) ![GitHub Repo stars](https://img.shields.io/github/stars/alvinunreal/awesome-openclaw-tips?style=social) - Curated tips, tricks, and practical guidance for getting more out of OpenClaw.
-- [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) ![GitHub Repo stars](https://img.shields.io/github/stars/VoltAgent/awesome-openclaw-skills?style=social) - Large categorized collection of OpenClaw skills from the wider skills ecosystem.
-- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) ![GitHub Repo stars](https://img.shields.io/github/stars/hesamsheikh/awesome-openclaw-usecases?style=social) - Practical OpenClaw use cases and applied examples.
 
 <p align="right"><a href="#contents">⬆️ Back to Top</a></p>
 
@@ -195,19 +178,13 @@
 <a id="learning-resources"></a>
 ## 🎓 Learning Resources
 
-- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) ![GitHub Repo stars](https://img.shields.io/github/stars/hesamsheikh/awesome-openclaw-usecases?style=social) - Real-world use cases and applied examples.
 - [alvinunreal/awesome-openclaw-tips](https://github.com/alvinunreal/awesome-openclaw-tips) ![GitHub Repo stars](https://img.shields.io/github/stars/alvinunreal/awesome-openclaw-tips?style=social) - Curated OpenClaw tips, setup advice, and practical usage guidance.
+- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) ![GitHub Repo stars](https://img.shields.io/github/stars/hesamsheikh/awesome-openclaw-usecases?style=social) - Real-world use cases and applied examples.
 - [datawhalechina/hello-claw](https://github.com/datawhalechina/hello-claw) ![GitHub Repo stars](https://img.shields.io/github/stars/datawhalechina/hello-claw?style=social) - Structured Chinese tutorial for getting started with OpenClaw.
 - [xianyu110/awesome-openclaw-tutorial](https://github.com/xianyu110/awesome-openclaw-tutorial) ![GitHub Repo stars](https://img.shields.io/github/stars/xianyu110/awesome-openclaw-tutorial?style=social) - Comprehensive Chinese tutorial covering setup, configuration, and practical usage.
 - [centminmod/explain-openclaw](https://github.com/centminmod/explain-openclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/centminmod/explain-openclaw?style=social) - Multi-AI documentation covering architecture, security, and deployment.
 
 <p align="right"><a href="#contents">⬆️ Back to Top</a></p>
-
-<a id="community"></a>
-## 🌍 Community
-
-- [openclaw.ai](https://openclaw.ai) - Official landing page and ecosystem entry point.
-- [docs.openclaw.ai](https://docs.openclaw.ai) - Documentation, setup, and reference material.
 
 ---
 
